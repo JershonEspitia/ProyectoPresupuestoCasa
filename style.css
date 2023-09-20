@@ -2,3 +2,11 @@
     padding: 0;
     margin-bottom: 10px;
 }
+
+body {
+    margin: 2% 20%;
+}
+
+.contain-register {
+    margin-bottom: 5%;
+}
