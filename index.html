@@ -13,6 +13,17 @@
 
   <div >
     <p class="h1">BALANCE INGRESOS Y EGRESOS</p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Total Ingresos</th>
+          <th scope="col">Total Egresos</th>
+          <th scope="col">Balance</th>
+        </tr>
+      </thead>
+      <tbody id="table-balance">
+      </tbody>
+    </table>
   </div>
 
   <div class="contain-register">
@@ -37,7 +48,7 @@
               Egreso
             </label>
         </div>
-        <button type="submit" class="btn btn-primary">Registrar</button>
+        <button id="btn-submit" type="submit" class="btn btn-primary">Registrar</button>
       </form>
   </div>
 
@@ -45,8 +56,9 @@
     <p class="h2">TABLA DE REGISTROS</p>
     <nav class="navbar navbar-light bg-light">
       <form class="form-inline">
-        <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Ingrese el ID" aria-label="Search">
+        <input id="searchInput" class="form-control mr-sm-2" type="number" placeholder="Ingrese el ID" aria-label="Search">
         <button id="searchButton" class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        <button id="clearButton" class="btn btn-outline-success my-2 my-sm-0" type="submit">Limpiar</button>
       </form>
     </nav>
     
