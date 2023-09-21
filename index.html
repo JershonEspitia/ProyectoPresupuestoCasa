@@ -12,28 +12,28 @@
 <body>
 
   <div >
-
+    <p class="h1">BALANCE INGRESOS Y EGRESOS</p>
   </div>
 
   <div class="contain-register">
       <form id="main-form">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"><p class="h1">REGISTRAR DINERO</p></label>
+          <label for="exampleInputEmail1" class="form-label"><p class="h2">REGISTRAR DINERO</p></label>
           <div class="input-group mb-3">
             <span class="input-group-text">$</span>
-            <input type="number" name="valor" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <input id="input-valor" type="number" name="valor"  class="form-control" aria-label="Amount (to the nearest dollar)">
           </div>            
         </div>
 
         <div class="form-check">
-            <input class="form-check-input" name="tipo" value="Ingreso" type="radio" id="flexRadioDefault2" checked>
-            <label class="form-check-label" for="flexRadioDefault2">
+            <input class="form-check-input" name="tipo" value="Ingreso" type="radio" id="radio-ingresos" checked>
+            <label class="form-check-label" for="radio-ingresos">
               Ingreso
             </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" name="tipo" value="Egreso" type="radio" id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+            <input class="form-check-input" name="tipo" value="Egreso" type="radio" id="radio-egresos">
+            <label class="form-check-label" for="radio-egresos">
               Egreso
             </label>
         </div>
@@ -42,11 +42,14 @@
   </div>
 
   <div class="contain-table">
-    <p class="h1">TABLA DE REGISTROS</p>
-    <label for="exampleDataList" class="form-label">Buscar</label>
-    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Ingrese el ID...">
-    <datalist id="datalistOptions">
-    </datalist>
+    <p class="h2">TABLA DE REGISTROS</p>
+    <nav class="navbar navbar-light bg-light">
+      <form class="form-inline">
+        <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Ingrese el ID" aria-label="Search">
+        <button id="searchButton" class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+      </form>
+    </nav>
+    
     <table class="table">
       <thead>
         <tr id="tr_titles">
