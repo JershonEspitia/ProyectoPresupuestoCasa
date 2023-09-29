@@ -1,0 +1,16 @@
+{
+  "name": "proyectopresupuestocasa",
+  "version": "1.0.0",
+  "description": "Este repositorio contiene un proyecto web que te permite llevar un registro de tus ingresos y egresos financieros, calcular tu balance y realizar búsquedas de transacciones específicas.",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "json-server --watch db.json --port 5500 --host 127.0.0.1"
+  },
+  "keywords": [],
+  "author": "Jershon Espitia",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "0.17.3"
+  }
+}
