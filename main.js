@@ -10,7 +10,7 @@
 // -----------------------------------------------------------------------------------------------------------
 
 // Variables globales que pueden ser usadas en todo el documento
-const API_URL = "https://6509d046f6553137159c1074.mockapi.io/Data";
+const API_URL = "http://127.0.0.1:5010/Data";
 const myForm = document.querySelector("#main-form");
 const myTable = document.querySelector("#main-data");
 const myTableBalance = document.querySelector("#table-balance");
